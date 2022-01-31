@@ -1,0 +1,34 @@
+#navTop {
+  font-size: 10px;
+  color: grey;
+  text-align: right;
+}
+
+#navMiddle {
+  text-align: center;
+}
+
+#navBottom ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+#navBottom li {
+  border-radius: 0;
+  float: left;
+  width: 16.667%;
+  min-width: 200px;
+}
+
+#navBottom button {
+  border: none;
+  background-color: orange;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+#navBottom button:hover {
+  background-color: rgb(221, 145, 4);
+}
