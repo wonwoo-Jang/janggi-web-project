@@ -1,6 +1,10 @@
 import "./NavMenu.css";
 
-function NavMenu() {
+function NavMenu({ nowPage, getNowPage }) {
+  function inPage(e) {
+    getNowPage(e.target.textContent);
+  }
+
   return (
     <div id="nav">
       <div id="navTop">
@@ -14,22 +18,22 @@ function NavMenu() {
       <div id="navBottom">
         <ul>
           <li>
-            <button>대국시작</button>
+            <button onClick={inPage}>대국 시작</button>;
           </li>
           <li>
-            <button>장기 소식</button>
+            <button onClick={inPage}>장기 소식</button>
           </li>
           <li>
-            <button>복기</button>
+            <button onClick={inPage}>복기</button>
           </li>
           <li>
-            <button>장기 강의</button>
+            <button onClick={inPage}>장기 강의</button>
           </li>
           <li>
-            <button>박보</button>
+            <button onClick={inPage}>박보</button>
           </li>
           <li>
-            <button>규칙설명</button>
+            <button onClick={inPage}>규칙 설명</button>
           </li>
         </ul>
       </div>
